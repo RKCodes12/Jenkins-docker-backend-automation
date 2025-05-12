@@ -19,8 +19,8 @@ FROM eclipse-temurin:17-jdk
 WORKDIR /backend_code
 
 # Set environment variables
-ENV DB_URL=jdbc:mysql://98.81.150.98:3306/TryovateApp_Db
-ENV CORS_ALLOWED_ORIGINS=http://98.81.150.98:5173
+ENV DB_URL=jdbc:mysql://3.84.186.193:3306/TryovateApp_Db
+ENV CORS_ALLOWED_ORIGINS=http://3.84.186.193:5173
 
 # Copy the built jar from the first stage
 COPY --from=build /backend_code/target/TryovateApp-0.0.1-SNAPSHOT.jar app.jar
